@@ -1,13 +1,18 @@
 {
-  "name": "docker_web_app",
+  "name": "node_docker_web_app",
   "version": "1.0.0",
-  "description": "Node.js on Docker",
+  "description": "Node, Angular, and MongoDB in Docker",
   "author": "Ben Redden",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon -L /usr/src/app/"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "mongoose"   : "^4.9.8",
+    "morgan"     : "^1.2.2",
+    "body-parser": "^1.5.2",
+    "method-override": "^2.1.2",
+    "nodemon": "^1.3.8"
   }
 }
